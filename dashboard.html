@@ -56,7 +56,7 @@
 
     <div class="list-group list-group-flush my-3 ">
         
-        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+        <a href="dashboard.html" class="list-group-item list-group-item-action bg-transparent second-text active">
             <i class="fas fa-tachometer-alt me-2"></i>Dashboard
         </a>
         
@@ -70,11 +70,10 @@
         <a href="shopping.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
             <i class="fas fa-cart-shopping me-2"></i>Shopping List
         </a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-            <i class="fas fa-project-diagram me-2"></i>Products
-        </a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-            <i class="fas fa-project-diagram me-2"></i>Chat
+     
+        <a href="chat.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <i class="fas fa-message me-2"></i>Chat
+            
         </a>
         <a href="index.html" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
             <i class="fas fa-right-from-bracket me-2"></i>Log out
@@ -84,11 +83,13 @@
 </div>
 
 <!-- Sidebar Ends -->
+
+
 <!-- Nav-bar -->
 <div id="page-content-wrapper">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-light  py-4 px-4">
         <div class="d-flex align-items-center">
-            <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+            <i class="fas fa-sliders primary-text fs-4 me-3" id="menu-toggle"></i>
             <h2 class="fs-2 m-0">Dashboard</h2>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -108,12 +109,14 @@
        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a href="#" class="dropdown-item">Profile</a></li>
                     <li><a href="#" class="dropdown-item">Setting</a></li>
-                    <li><a href="#" class="dropdown-item">logout</a></li>
+                    <li><a href="index.html" class="dropdown-item">logout</a></li>
                 </ul>
                 </li>
         </ul>
         </div>
     </nav>
+
+    
     <div class="container-fluid px-4">
        <div class="row g-3 my-2">
 
@@ -121,6 +124,7 @@
         
         <!-- cards -->
      <div class="div col-md-3">
+       <a href="chores.html" class="text-decoration-none link-dark">
            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
             <div><h3 class="fs-2">100</h3>
             <p class="fs-5">Chores</p>
@@ -128,11 +132,11 @@
             <i class="fas fa-hand-sparkles fs-1 primary-text border rounded-full secondary-bg p-3"></i>
 
         </div>
-       
+      </a>
      </div>
      
      <div class="div col-md-3">
-        <a href="#" class="text-decoration-none link-dark"> 
+        <a href="shopping.html" class="text-decoration-none link-dark"> 
           <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
             <div><h3 class="fs-2">20</h3>
             <p class="fs-5">Shopping</p>
@@ -143,15 +147,19 @@
     </a>
      </div>
      <div class="div col-md-3">
-           <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-            <div><h3 class="fs-2">$320</h3>
-            <p class="fs-5">Expenses</p>
-            </div>
-            <i class="fas fa-file-invoice-dollar fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+      <a href="expense.html" class="text-decoration-none link-dark">
 
+        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+          <div><h3 class="fs-2">$320</h3>
+            <p class="fs-5">Expenses</p>
+          </div>
+          <i class="fas fa-file-invoice-dollar fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+          
         </div>
+      </a>
      </div>
      <div class="div col-md-3">
+      <a href="#" class="text-decoration-none link-dark"> 
            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
             <div><h3 class="fs-2">6</h3>
             <p class="fs-5">Roomies</p>
@@ -159,6 +167,7 @@
             <i class="fas fa-house-user fs-1 primary-text border rounded-full secondary-bg p-3"></i>
 
         </div>
+        </a>
      </div>
        </div>
    <!-- Cards ends -->
