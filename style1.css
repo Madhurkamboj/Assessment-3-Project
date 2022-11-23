@@ -29,7 +29,7 @@ secondary-bg{
 #wrapper {
     overflow-x: hidden;
     
-    );
+    ;
 }
 
 
@@ -87,6 +87,10 @@ secondary-bg{
    #wrapper.toggled #sidebar-wrapper{
     margin-left: -15rem;
    }
+}
+
+ .modal .btn {
+    background-color: #6C63FF;
 }
 
 

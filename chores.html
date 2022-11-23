@@ -131,7 +131,8 @@
   
   <!-- Add button -->
   
-  <a href="#" class="position-fixed text-dark " style="right: 3rem; bottom: 3rem; font-size: 4rem;">
+  <a href="#" class="position-fixed text-dark " style="right: 3rem; bottom: 3rem; font-size: 4rem;" data-bs-toggle="modal"
+                data-bs-target="#Chore-Modal">
     
     <i class="fas fa-plus "></i>
   </a>
@@ -147,6 +148,70 @@
 
 
 
+
+              <!-- Chore adding modal -->
+  
+    <div
+      class="modal fade"
+      id="Chore-Modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="Chore-Modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chore">Create a New Chore</h5>
+            <button
+              type="button"
+              class="close btn btn-sm"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- <h2 class="text-center">Log-In</h2> -->
+            <form action="">
+              <div class="mb-3">
+                <label for="chore-name" class="col-form-label">Enter A Chore Name </label>
+
+                <input type="text" class="form-control" id="chore-name" />
+              </div>
+
+              <div class="mb-3">
+                <label for="due-date" class="col-form-label ">Due Date </label>
+                <input type="date" class="form-control" id="due-date" />
+              </div>
+              <div class="mb-3">
+                 
+                    <label for="assign-chore" class="col-form-label ">Assign To</label>
+                    <select id="assign-chore" class="form-control">
+                      
+                      <option selected>Choose...... </option>
+                      <option>Mark</option>
+                      <option>Manu</option>
+                      <option>Anna</option>
+                      <option>Jing</option>
+                      <option>Muhammad</option>
+                     
+                    </select>
+                  
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+         
+            <a data-bs-dismiss="modal" class="btn btn-secondary" onclick="alert('New Chore Has Been Created!')">Create </a>
+            <!-- <input type="button" onclick="alert('Hello World!')" value="Click Me!"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- chore adding modal finishes  -->
 
 
 
